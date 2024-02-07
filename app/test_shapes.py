@@ -5,9 +5,9 @@ class TestShapes(unittest.TestCase):
 
     def test_calculate_area(self):
         # Test case for the calculate_area method of the Rectangle class
-
+        # Create Comment
         # Setup: Create an instance of Rectangle
-        rect = Rectangle(10, 8)
+        rect = Rectangle(10, 10)
         result = rect.calculate_area()
         self.assertEqual(result, 50, "The area of the rectangle should be 50")
 

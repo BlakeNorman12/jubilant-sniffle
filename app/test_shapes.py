@@ -7,7 +7,7 @@ class TestShapes(unittest.TestCase):
         # Test case for the calculate_area method of the Rectangle class
 
         # Setup: Create an instance of Rectangle
-        rect = Rectangle(10, 7)
+        rect = Rectangle(10, 8)
         result = rect.calculate_area()
         self.assertEqual(result, 50, "The area of the rectangle should be 50")
 

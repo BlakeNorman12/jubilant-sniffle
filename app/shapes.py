@@ -12,7 +12,12 @@ class Shapes:
         pass
 
 class Triangle(Shapes):
-    pass
+    
+    def __init__(self, base, height):
+        super().__init__(base, height, 0.0)
+
+    def calculate_area(self):
+        return ((self.base * self.height) / 2)
 
 #First method tested
 class Rectangle(Shapes):
@@ -24,4 +29,9 @@ class Rectangle(Shapes):
         return self.base * self.height
 
 class Circle(Shapes):
-    pass
+    
+    def __init__(self, base, height, radius):
+        super().__init__(base, height, radius)
+
+    def calculate_area(self):
+        return (self.radius * self.radius * 3.14)
